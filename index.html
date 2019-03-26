@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trench Generator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<br><br><br><br><br><br>
+	<img src="TOPLogo.svg" width="150px">
+	<br>
+	<img src="TOPName.svg" width="560px">
+	<br><br><br><br><br><br>
+	<h1>Trench Cover Generator</h1>
+	<img src="TOPSymbols.png" width="200px">
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="content" id="content">
+		<h2>Options</h2>
+
+		<input type="radio" name="radio1" id="colour" value="colour" checked><p class="inlinep">Colour</p><br>
+		<input type="radio" name="radio1" id="lgrad"  value="lgrad"         ><p class="inlinep">Gradient</p><br>
+
+		<div id="options">
+			
+		</div>
+
+		<div id="generate" class="button"><p onclick="generate()">Generate</p></div>
+
+		<div id="image" class="image">
+			<div class="background" id="background" style="background-color:#f6e200"></div>
+			<img src="trench.png" class="overlay" height="480px" id="overlay">
+		</div>
+	</div>
+	<script src="html2canvas.js"></script>
+	<script src="download.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
