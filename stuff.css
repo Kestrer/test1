@@ -1,0 +1,20 @@
+#frame {
+	width: 500px;
+	height: 500px;
+	background-color: black;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.circle {
+	width:  5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+}
+
+p {
+	width: calc(100% - 500px);
+}

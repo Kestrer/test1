@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Trench Generator</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>test1</title>
+	<link rel="stylesheet" type="text/css" href="stuff.css">
 </head>
 <body>
-	<br><br><br><br><br><br>
-	<img src="TOPLogo.svg" width="150px">
-	<br>
-	<img src="TOPName.svg" width="560px">
-	<br><br><br><br><br><br>
-	<h1>Trench Cover Generator</h1>
-	<img src="TOPSymbols.png" width="200px">
+<h1>test1</h1>
+<p>This is a test repo in github, to see how github works. Have some bouncy circles, why not.</p>
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<div class="content" id="content">
-		<h2>Options</h2>
+<div id="frame">
+</div>
 
-		<input type="radio" name="radio1" id="colour" value="colour" checked><p class="inlinep">Colour</p><br>
-		<input type="radio" name="radio1" id="lgrad"  value="lgrad"         ><p class="inlinep">Gradient</p><br>
+<button onclick="newCircle()">New Circle</button><br>
+<span>Starting size:</span><input type="number" name="startingsize" min="1" max="100" id="startingsize"><br>
+<button onclick="deleteCircles()">Delete all Circles</button><br>
+<button onclick="collisionToggle()" id="ct">Turn Collision Off</button><br>
+<button onclick="eatingToggle()" id="eat">Turn Eating On</button><br>
+<button onclick="toggleConstant()" id="tc">Turn Constantly Making Circles On</button><br>
+<span>Constantly Making Circles Rate:</span><input type="number" name="tcrate" min="1" max="100" id="tcrate"><br>
+<p id="numberOfCircles">0</p>
 
-		<div id="options">
-			
-		</div>
+<p>Also I know the balls crash inside each other sometimes, but I don't care.</p>
 
-		<div id="generate" class="button"><p onclick="generate()">Generate</p></div>
-
-		<div id="image" class="image">
-			<div class="background" id="background" style="background-color:#f6e200"></div>
-			<img src="trench.png" class="overlay" height="480px" id="overlay">
-		</div>
-	</div>
-	<script src="html2canvas.js"></script>
-	<script src="download.js"></script>
-	<script src="main.js"></script>
+<script type="text/javascript" src="circle.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
